@@ -27,5 +27,15 @@ jobs:
     - name: Display variables
       run: | 
            echo Var GitHub Actor is: $GITHUB_ACTOR
-           echo Var GitHub User is: $GITHUB_USER
+           echo Var GitHub Environment is: $GITHUB_ENVIRONMENT
            echo Var GitHub Workflow is: $GITHUB_WORKFLOW      
+           echo Var GitHub Ref is: $GITHUB_REF
+           echo Var GitHub Run ID is: $GITHUB_RUN_ID
+           echo "Home: ${HOME}"
+           echo "GITHUB_ACTIONS: ${GITHUB_ACTIONS}"
+           echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
+           echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+           echo "GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}"
+           echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
+           echo "GITHUB_SHA: ${GITHUB_SHA}"
+           echo "GITHUB_REF: ${GITHUB_REF}"             
