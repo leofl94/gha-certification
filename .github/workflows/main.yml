@@ -25,4 +25,7 @@ jobs:
       run: npm install
     
     - name: Display variables
-      run: "echo Var GitHub Actor is: $GITHUB_ACTOR"
+      run: | 
+           echo Var GitHub Actor is: $GITHUB_ACTOR
+           echo Var GitHub User is: $GITHUB_USER
+           echo Var GitHub Workflow is: $GITHUB_WORKFLOW      
